@@ -28,5 +28,5 @@ jobs:
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           script: |
             cd ~/test/Blue-Green-study
-            docker compose up -d --build
+            docker-compose up -d --build
             docker exec nginx nginx -s reload
