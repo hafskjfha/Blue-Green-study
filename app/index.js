@@ -5,7 +5,7 @@ const PORT = 3000;
 const VERSION = process.env.APP_VERSION || 'unknown';
 
 app.get('/', (req, res) => {
-  res.send(`Hello from ${VERSION} v2`);
+  res.send(`Hello from ${VERSION} v3`);
 });
 
 app.get('/health', (req, res) => {
