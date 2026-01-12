@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send(`Hello from ${COLOR} v3!`);
 });
 
+app.get("/health", (req, res) => {
+  res.send("OK");
+});
+
 app.listen(3000, () => {
   console.log(`Server running on ${COLOR}`);
 });
