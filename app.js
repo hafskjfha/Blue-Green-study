@@ -4,7 +4,7 @@ const app = express();
 const COLOR = process.env.COLOR || "unknown";
 
 app.get("/", (req, res) => {
-  res.send(`Hello from ${COLOR}`);
+  res.send(`Hello from ${COLOR} v2!`);
 });
 
 app.listen(3000, () => {

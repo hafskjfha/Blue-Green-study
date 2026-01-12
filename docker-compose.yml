@@ -1,6 +1,6 @@
 services:
   blue:
-    image: your-id/blue-green-demo:latest
+    image: your-id/blue-green-test:latest
     container_name: blue
     environment:
       - COLOR=blue
@@ -8,7 +8,7 @@ services:
       - "3001:3000"
 
   green:
-    image: your-id/blue-green-demo:latest
+    image: your-id/blue-green-test:latest
     container_name: green
     environment:
       - COLOR=green
