@@ -1,0 +1,16 @@
+services:
+  blue:
+    image: your-id/blue-green-demo:latest
+    container_name: blue
+    environment:
+      - COLOR=blue
+    ports:
+      - "3001:3000"
+
+  green:
+    image: your-id/blue-green-demo:latest
+    container_name: green
+    environment:
+      - COLOR=green
+    ports:
+      - "3002:3000"
