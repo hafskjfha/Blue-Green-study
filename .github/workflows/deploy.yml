@@ -29,4 +29,4 @@ jobs:
           script: |
             cd /srv/blue-green
             docker pull ${{ secrets.DOCKER_USERNAME }}/blue-green-test:latest
-            docker-compose up -d
+            docker compose up -d
