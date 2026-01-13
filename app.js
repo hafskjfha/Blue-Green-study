@@ -3,6 +3,11 @@ const app = express();
 
 const COLOR = process.env.COLOR || "unknown";
 
+if (process.env.CRASH === "true") {
+  console.log("Intentional crash!");
+  process.exit(1);
+}
+
 app.get("/", (req, res) => {
   res.send(`Hello from ${COLOR} v3!`);
 });
